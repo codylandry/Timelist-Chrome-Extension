@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Timelist Filters",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://timelist.com/index*"
+            ],
+            "js": ["jquery-3.2.1.min.js", "content.js"]
+        },
+        {
+            "matches": [
+                "*://timelist.com/task*"
+            ],
+            "js": ["jquery-3.2.1.min.js", "content2.js"]
+        }
+    ]
+}
